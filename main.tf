@@ -98,7 +98,7 @@ resource "aws_route_table" "prod-route-table" {
   }
 
   tags = {
-    Name = "Proe"
+    Name = "Prod"
   }
 }
 
@@ -175,7 +175,7 @@ resource "aws_network_interface" "web-server" {
 
 
 resource "aws_eip" "one" {
-  vpc                       = true
+  #vpc                       = true
   network_interface         = aws_network_interface.web-server.id
   associate_with_private_ip = "10.0.0.14"
   depends_on = [aws_internet_gateway.gw]

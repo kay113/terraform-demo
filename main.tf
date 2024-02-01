@@ -26,7 +26,7 @@
    region ="us-east-1"
    #access_key = "AKIA3YJMLVCIU7ULNAO6"
    #secret_key = "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"
- #}
+ }
 
 #  variable "subnet_prefix" {
 #   description = "cidr block for the subnet"
